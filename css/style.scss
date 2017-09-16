@@ -1,0 +1,67 @@
+@import 'colors';
+@import 'media';
+
+$suorange:#d44500;
+
+body {
+    @include phone {
+        background-color: $dark-blue; }
+    @include desktop {
+      background-color: $suorange;
+    }
+}
+    
+nav {
+    ul {
+        background-color: $dark-grey;
+    }
+}
+@mixin boxPackage() {
+    height: 500px;
+    width: 400px;
+    background-color: $bright-green;
+    @include phone {
+        background-color: $dark-blue; }
+    @include desktop {
+      background-color: $suorange;
+    }
+}
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+.box { 
+    @include border-radius(10px);
+    background-color:$sea-green;
+    @include boxPackage();
+    @include phone {
+        background-color: $suorange; }
+    @include desktop {
+      background: $bright-green;
+    }
+}
+
+.message {
+    width: 500px;
+    height: 100px;
+    background-color: $silver-chalice;
+}
+
+.success {
+  @extend .message;
+  background-color: $sea-green;
+}
+
+.error {
+  @extend .message;
+  background-color: $red;
+   color: white;
+}
+
+.warning {
+  @extend .message;
+  background-color: $yellow;
+}

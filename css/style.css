@@ -1,0 +1,48 @@
+@media (min-width: 320px) {
+  body {
+    background-color: #2a00b3; } }
+@media (min-width: 800px) {
+  body {
+    background-color: #d44500; } }
+
+nav ul {
+  background-color: #a9a9a9; }
+
+.box {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px;
+  background-color: #8fbc8f;
+  height: 500px;
+  width: 400px;
+  background-color: #58C69F; }
+  @media (min-width: 320px) {
+    .box {
+      background-color: #2a00b3; } }
+  @media (min-width: 800px) {
+    .box {
+      background-color: #d44500; } }
+  @media (min-width: 320px) {
+    .box {
+      background-color: #d44500; } }
+  @media (min-width: 800px) {
+    .box {
+      background: #58C69F; } }
+
+.message, .success, .error, .warning {
+  width: 500px;
+  height: 100px;
+  background-color: #a6a6a6; }
+
+.success {
+  background-color: #8fbc8f; }
+
+.error {
+  background-color: #ff5050;
+  color: white; }
+
+.warning {
+  background-color: #FFFF00; }
+
+/*# sourceMappingURL=style.css.map */
